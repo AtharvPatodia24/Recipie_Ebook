@@ -40,7 +40,7 @@
         background-color: #45a049; /* Green */
       }
       .resetbutton:hover {
-        background-color: #ff0000; /* Red */
+        background-color: #ff0000;
       }
     </style>
     <title>Recipe upload</title>
@@ -57,7 +57,7 @@
           <label for="preptime">How Long will it take?</label>
           <input type="time" name="preptime" id="preptime" />
         </p>
-        <p>
+        <!--<p>
           <label for="difficulty">Difficulty Level?</label> <br />
           <input type="radio" name="difficulty" id="veasy" />
           <label for="veasy">Very easy</label> <br />
@@ -69,6 +69,10 @@
           <label for="hard">Hard</label><br />
           <input type="radio" name="difficulty" id="vhard" />
           <label for="vHard">Very Hard</label>
+        </p>/-->
+        <p>
+          <label for="difficulty">Difficulty Level?</label> <br />
+          <input type="text" name="difficulty" id="difficulty" />
         </p>
         <p>
           <label for="ingredients">Ingredients:</label><br />
@@ -83,7 +87,7 @@
           <textarea class="recipe" name="recipe" id="recipe"></textarea>
         </p>
         <p>
-          <lable for="Additional notes">Notes:</lable><br />
+          <lable for="notes">Notes:</lable><br />
           <textarea
             class="additionalnotes"
             name="additionalnotes"
@@ -91,7 +95,9 @@
           ></textarea>
         </p>
         <p>
-          <button type="submit" class="submitbutton">Add recipe</button>
+          <button name="submit" type="submit" class="submitbutton">
+            Add recipe
+          </button>
           <button type="reset" class="resetbutton">Clear</button>
         </p>
       </form>
