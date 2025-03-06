@@ -4,8 +4,9 @@
     <style>
       h1 {
         text-align: center;
-        background-color: #45a049;
+        background-color: #4caf50;
         padding: 10px 10px;
+        color: white;
       }
       * {
         font-family: Arial, Helvetica, sans-serif;
@@ -42,12 +43,28 @@
       .resetbutton:hover {
         background-color: #ff0000;
       }
+      .button1 {
+        background-color: #4c5eaf;
+        /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
     </style>
     <title>Recipe upload</title>
   </head>
-  <body>
+  <body style="background-color: #aefd6c">
     <div class="form">
       <h1>Recipe upload</h1>
+      <a href="Main.html" class="button1">Back to home</a>
+      <br />
       <form method="POST" action="link.php">
         <p>
           <label for="name">Name of dish:</label>
