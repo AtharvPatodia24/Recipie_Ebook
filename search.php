@@ -8,8 +8,7 @@
         <style>
         * {
         font-family: Arial, Helvetica, sans-serif;
-        margin-left: 5px;
-        margin-right: 5px;
+       
         margin-top: 2px;
         }
           h1 {
@@ -35,7 +34,7 @@
         </style>
       </head>
     
-      <body style="background-color: #aefd6c">
+      <body style="background-image: linear-gradient(to top left, rgb(255, 78, 78), rgb(255, 255, 88)); background-repeat: no-repeat; background-size: 100% 500%;">
         <div class="form">
           <h1>Find Recipes</h1>
           <a href="Main.html" class="button1">Back to home</a>

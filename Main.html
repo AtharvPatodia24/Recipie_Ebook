@@ -18,7 +18,7 @@
         font-size: 75px;
         background-color: #4caf50;
       }
-      .button1 {
+      .home {
         background-color: #4caf50;
         /* Green */
         border: none;
@@ -62,7 +62,20 @@
       }
     </style>
   </head>
-  <body style="background-color: #aefd6c">
+  <body
+    style="
+      background-image: linear-gradient(
+        to top left,
+        rgb(255, 78, 78),
+        rgb(255, 255, 88)
+      );
+    "
+  >
+    <div class="topnav">
+      <a class="active" href="Main.html" class="home">Home</a>
+      <a href="Search.php">Search for recipes</a>
+      <a href="Interface.html">Upload a recipe</a>
+    </div>
     <h1>Welcome to The flavour vault</h1>
     <a href="search.php" class="button1">Find recipes here</a>
     <a href="Interface.html" class="button2">Add recipes here</a>
