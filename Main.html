@@ -18,47 +18,46 @@
         font-size: 75px;
         background-color: #4caf50;
       }
-      .home {
-        background-color: #4caf50;
-        /* Green */
+      .topnav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 300px; /* Adjust the gap between links as needed */
+      }
+      .topnav a {
         border: none;
         color: white;
         padding: 10px 20px;
-        text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 4px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
       }
-      .button2 {
+      .upload {
         background-color: #4c5eaf;
-        /* Green */
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 4px;
+      }
+      .home {
+        background-color: #874caf;
+      }
+      .search {
+        background-color: #4caf50;
+      }
+      .foodclubimg {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
       }
-      img {
-        display: block;
+      .logo {
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 10%;
+      }
+      div {
+        background-color: rgb(167, 167, 167);
       }
     </style>
   </head>
@@ -69,17 +68,20 @@
         rgb(255, 78, 78),
         rgb(255, 255, 88)
       );
+      background-repeat: no-repeat;
+      background-size: 100% 500%;
     "
   >
     <div class="topnav">
-      <a class="active" href="Main.html" class="home">Home</a>
-      <a href="Search.php">Search for recipes</a>
-      <a href="Interface.html">Upload a recipe</a>
+      <img src="Images/image.png" class="logo" />
+      <a href="Main.html" class="home">Home</a>
+      <a href="Search.php" class="search">Search for recipes</a>
+      <a href="Interface.html" class="upload">Upload a recipe</a>
     </div>
-    <h1>Welcome to The flavour vault</h1>
-    <a href="search.php" class="button1">Find recipes here</a>
-    <a href="Interface.html" class="button2">Add recipes here</a>
     <br />
-    <img src="Images/Screenshot 2025-03-06 151618.png" />
+    <!--<br />
+    <hr / style="border: 1px solid black;">
+    <br /> -->
+    <img src="Images/Screenshot 2025-03-06 151618.png" class="foodclubimg" />
   </body>
 </html>
